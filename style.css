@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.parent{
+    width: 80%;
+    height: 8vh;
+    margin: auto;
+}
+nav{
+    margin-top: 0px;
+    /* text-align:; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    align-items: center;
+    /* width: 1280.76px; */
+    width: 100%;
+    background-color: rgb(148, 143, 143);
+    position: sticky;
+    height: 100%;
+    /* height: 30px; */
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    /* flex-direction: row; */
+    /* margin-right: 0px; */
+    color: white;
+    height: 100%;
+    }
+
+nav ul li{
+    list-style: none;
+    /* margin: 25px; */
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+nav ul li:hover{
+    background-color: white;
+    color: black;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li:hover a{
+    color: black;
+}
+
+.practical{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    /* background-image: url(https://i.imgur.com/qIxEnMl.jpeg); */
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/1280px-Desktop_computer_clipart_-_Yellow_theme.svg.png); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.practical img{
+    max-width: 100%;
+    /* height: 680px; */
+    /* height: 100%; */
+}
+.practical h2{
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.member{
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+.teammembers{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.second h1{
+    text-align: center;
+}
+.box{
+    width: 50%;
+    border: 2px solid red;
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+}
+.box1{
+    background-color: rgb(125, 117, 117);
+}
+.smallbox{
+    he
+}
