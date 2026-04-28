@@ -3,44 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="parent">
-        <nav>
-            <!-- <button class="menu-btn">&#9776;</button> -->
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#project">PROJECT</a></li>
-                <li><a href="#team">TEAM</a></li>
-                <li><a href="#technologies">TECHNOLOGIES</a></li>
-                <LI><a href="#contact">CONTACT</a></LI>
-            </ul>
-        </nav>
-    </div>
-    <div class="practical">
-        <img src="image/practical 9.jpeg" alt="">
-        <h2>Practical-9</h2>
-    </div>
-<div class="second">
-    <h1>Team Members</h1>
-    <div class="teammembers">
-        <div class="member"></div>
-        <div class="member"></div>
-        <div class="member"></div>
-        <div class="member"></div>
-    </div>
-    <h1>About us</h1>
-    <div class="container">
-        <div class="box box1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus debitis atque illum neque quia dolor labore laborum, expedita voluptatum at quisquam? Dolore suscipit est perspiciatis animi aliquam dolor distinctio, voluptatum officiis nihil quod similique aspernatur expedita? Earum facilis veritatis odit officiis pariatur dolorem ut suscipit adipisci esse et ipsum saepe voluptatibus vel dolor labore quo deserunt illum magnam, itaque consequatur consectetur quaerat sint maiores. Asperiores, neque hic!</div>
-        <div class="box box2">
-            <div class="smallbox"></div>
-            <div class="smallbox"></div>
-            <div class="smallbox"></div>
+    
+    <nav>
+        <div class="left">
+            <a href="">Anil Kumar Sah</a>
         </div>
-    </div>
-    </div>
+        <div class="right">
+            <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+            <a href="mailto:anil.kumar.cs27@iilm.edu" >
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hey, Anil Here</h2>
+                <p>This is Anil Kumar Sah, a B.Tech Computer Science undergraduate at IILM University with a strong academic record and a deep interest in software development and machine learning. I have hands-on experience building projects like a breast cancer detection model and a gesture-based control system using Python and computer vision tools. With a solid foundation in programming and problem-solving, I am eager to develop impactful solutions and grow as a technology professional.</p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#projects">
+                        <i class="fa-solid fa-computer"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#testimony">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Testimony</span>
+                    </a>
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div> 
+            <div class="headshot">
+                <img src="Images/formal photo.jpg" alt="">
+            </div>
+        </section>
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">Proficient in Python, Java, C, and SQL with strong problem-solving skills. Experienced in machine learning, feature engineering, and computer vision using tools like Scikit-learn, OpenCV, and Pandas. Familiar with DBMS, Git, and software development fundamentals.</div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="Images/html.jpg" alt="">
+                    <span>HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="Images/css.jpeg" alt="">
+                    <span>CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="Images/js.webp" alt="">
+                    <span>JavaScipt</span>
+                </div><div class="cell">
+                    <img src="Images/ml.png" alt="">
+                    <span>ML</span>
+                </div>
+                <div class="cell">
+                    <img src="Images/dl.png" alt="">
+                    <span>DL</span>
+                </div>
+                
+            </div>
+        </section>
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2> 
+            <div class="group">
+                <div class="project-items">
+                    <div class="left"><h3>1.Next-Word Predictor using LSTM Model</h3>
+                    <div class="description">
+                        <p> <br>Developed a deep learning-based next word prediction system using LSTM architecture trained on textual data to predict the next 10 probable words from a given input sequence. Implemented text preprocessing, tokenization, sequence padding, word embeddings, and SoftMax-based probability prediction to demonstrate practical applications of Natural Language Processing in predictive keyboards, email autocomplete, and AI text generation systems. <br> <br> Tools & Technologies: Python, Keras, NumPy, Pandas, NLP, Tokenizer, LSTM.</p>
+                    </div></div>
+                    <div class="right"><img src="Images/lstm.png" alt=""></div>
+                </div>
+                <div class="project-items">
+                    <div class="left"><h3>2.Breast Cancer Detection Model using Machine Learning</h3>
+                    <div class="description"> <br>Developed a machine learning project focused on detecting breast cancers in females by applying statistical techniques and machine learning algorithms, Achieved accuracy of 99% using Hyperparameter tunning and feature selection <br> <br>Tools & Technologies: : Python, Scikit-learn, Pandas, NumPy, Matplotlib, Jupyter Notebook</div></div>
+                    <div class="right"><img src="Images/knn.png" alt=""></div>
+                </div>
+                <div class="project-items">
+                    <div class="left"><h3>3.Hand Gesture Control System using OpenCV and Mediapipe</h3>
+                    <div class="description"> <br>Developed a real-time game control system that allows users to control games using hand and body gestures, simulating keyboard and mouse actions to demonstrate practical computer vision and HCI applications. <br> <br>Tools & Technologies: Python, OpenCV, Media-Pipe, PyDirectInput, Webcam, pyautogui.</div></div>
+                    <div class="right"><img src="Images/handgesture.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section id="testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-details">
+                    <img src="Images/tonystark.jpg" alt="">
+                    <p>Tony Stark</p>
+                    <p>CEO of Stark Industries</p>
+                </div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione maxime, perferendis totam quos qui repudiandae optio ad cupiditate porro hic similique quam praesentium, soluta error minus quo cum. Aperiam impedit tempora laborum fuga itaque placeat laudantium ipsum, officia et blanditiis est voluptas culpa numquam! Mollitia alias tenetur atque. At!</div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, maiores eos sunt sapiente alias voluptatum ducimus necessitatibus quam odio eligendi, cumque pariatur perspiciatis totam voluptates error eaque? Ullam earum fugiat tempore aspernatur quibusdam excepturi omnis dolorum, nulla, enim porro suscipit culpa deserunt quia repellendus cupiditate aut eos nam, corrupti architecto.
+                </div>
+                <form action="https://formspree.io/f/xykloypo" method="POST">
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" cols="30" rows="10" required></textarea>
+
+<!-- Anti Spam -->
+<input type="text" name="_gotcha" style="display:none">
+
+<button type="submit">Send Message</button>
+```
+
+</form>
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
