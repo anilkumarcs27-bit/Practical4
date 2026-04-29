@@ -1,294 +1,445 @@
-:root{
-    --text-color: #1a1c20;
-    --link-color: #4a76ee;
-    --background-color: #eeeff1;
-}
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
 }
 body{
-    font-family: 'popins',sans-serif;
-    background-color: var(--background-color);
-    max-width: 1400px;
-    margin: 0 auto;
-}
-a{
-    color: var(--link-color);
-    text-decoration: none;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
-}
-nav .left a{
-    color: var(--text-color);
-    font-size: 22px;
-    font-weight: 600;
-}
-nav .right a{
-    color: var(--text-color);
-    margin: 0 10px;
-}
-nav .right a:last-child{
-    color: var(--background-color);
-    background-color: var(--text-color);
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-nav.right a span{
-    margin-left: 5px;
-}
-.hero-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    margin: 50px 0;
-    gap: 40px;
-    margin-bottom: 100px;
-} 
-.hero-section .text{
-    flex: 5;
-}
-.hero-section .text h2{
-    font-size: 45px;
-}
-.hero-section .text .links{
-    margin-top: 25px;
-}
-.hero-section .text .links a{
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid var(--link-color);
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    transition: 0.1s;
-}
-.hero-section .text .links a:hover{
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
-}
-.hero-section .headshot{
-    flex: 2;
-    display: flex;
-    justify-content: right;
-}
-.hero-section .headshot img{
-    border-radius: 50%;
-    width: 350px;
-}
-.skills-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-.skills-section h2{
-    text-align: center;
-    font-size: 35px;
-}
-.skills-section .text{
-    text-align: center;
-    margin-bottom: 20px;
-}
-.skills-section .cells{
-    display: flex;
-    justify-content: center;
-    flex-grow: wrap;
-}
-.skills-section .cells .cell{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 200px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid #d3d3d3;
-    border-radius: 5px;
-}
-.skills-section .cells .cell img{
-    width:30px;
-    height: 30px;
-    object-fit: contain;
-    border-radius: 2px;
-}
-.skills-section .cells .cell span{
-    font-size: 18px;
-}
-.projects-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-.projects-section h2{
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-.projects-section .group{
-    gap: 50px;
-    padding: 10px 20px;
-    width: 100%;
-}
-.projects-section .group .project-items{
-    margin: 50px 30px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* height: 30vh; */
-}
-.projects-section .group .project-items .left{
-    width: 70%;
-}
-.projects-section .group .project-items .right{
-    width: 30%;
-}
-.projects-section .group .project-items .right img{
-    width: 100%;
-    height: 30vh;
-}
-
-.testimony-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-.testimony-section h2{
-    font-size: 35px;
-    margin-bottom: 30px;
-}
-.testimony-section .group{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.testimony-section .group .person-details{
-    text-align: center;
-    flex: 2;
-}
-.testimony-section .group .person-details img{
-    width: 200px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-.testimony-section .group .person-details p{
-    font-weight: 600;
-}
-.testimony-section .group .person-details p:last-child{
-    font-weight: normal;
-}
-.testimony-section .group .text{
-    flex: 8;
-}
-.contact-section{
-    padding: 0 50px;
-    margin-bottom: 100px;
-}
-.contact-section h2{
-    font-size: 35px;
-}
-.contact-section .group{
-    display: flex;
-    gap: 50px;
-}
-.contact-section .group .text{
-    flex: 3;
-    margin-top: 20px;
-}
-.contact-section .group form{
-    flex: 3;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
-.contact-section .group form input,
-.contact-section .group form textarea{
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--link-color);
-    background-color: transparent;
-    padding: 10px;
-    margin-bottom: 15px;
-    outline: none;
-    resize: none;
+.parent{
+    width: 80%;
+    height: 8vh;
+    margin: auto;
 }
-.contact-section .group form button{
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    background-color: var(--link-color);
-    border: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.1s;
+nav{
+    margin-top: 0px;
+    /* text-align:; */
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    align-items: center;
+    /* width: 1280.76px; */
+    width: 100%;
+    background-color: rgb(148, 143, 143);
+    position: sticky;
+    height: 100%;
+    /* height: 30px; */
 }
-.contact-section .group form button:hover{
-    filter: brightness(0.9);
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    /* flex-direction: row; */
+    /* margin-right: 0px; */
+    color: white;
+    height: 100%;
+    }
+
+nav ul li{
+    list-style: none;
+    /* margin: 25px; */
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+nav ul li:hover{
+    background-color: white;
+    color: black;
 }
-@media (max-width: 850px){
-    .hero-section .text h2{
-        font-size: 35px;
-    }
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media (max-width: 740px){
-    .hero-section{
-        flex-direction: column-reverse;
-    }
-    .hero-section .headshot img{
-        width: 300px;
-    }
-    .testimony-section{
-        text-align: center;
-    }
-    .testimony-section .group{
-        flex-direction: column;
-    }
-    .contact-section .group{
-        display: flex;
-        flex-direction: column;
-    }
-    .projects-section .group .project-items{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+nav ul li:hover a{
+    color: black;
 }
-@media (max-width: 600px){
-    nav{
-        padding: 0 20px;
-    }
-    nav .right a{
-        font-size: 22px;
-    }
-    nav .right a:last-child{
-        color: var(--text-color);
-        background-color: transparent;
-        padding: 0;
-    }
-    nav .right a span{
-        display: none;
-    }
-    .hero-section{
-        padding: 0 50px;
-    }
-    .hero-section .text h2{
-        font-size: 30px;
-    }
-    .skills-section{
-        padding: 0 20px;
-    }
-    .skills-section .cells .cell span{
-        font-size: 16px;
-    }
-    .testimony-section{
-        padding: 0 20px;
-    }
-    .contact-section{
-        padding: 0 20px;
-    }
+
+.practical{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    /* background-image: url(https://i.imgur.com/qIxEnMl.jpeg); */
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Desktop_computer_clipart_-_Yellow_theme.svg/1280px-Desktop_computer_clipart_-_Yellow_theme.svg.png); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.practical img{
+    max-width: 100%;
+    /* height: 680px; */
+    /* height: 100%; */
+}
+.practical h2{
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    color: white;
+}
+.member{
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    overflow: hidden;
+}
+.member img{
+    height: 100%;
+    width: 100%;
+}
+.teammembers{
+    display: flex;
+    /* flex-direction: row; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.second h1{
+    text-align: center;
+}
+.box{
+    width: 50%;
+    /* border: 2px solid red; */
+    margin: 15px;
+    height: 70vh;
+}
+.container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    font-size: 40px;
+}
+.box1{
+    background-color: rgb(125, 117, 117);
+    color: white;
+    /* padding: 5px; */
+}
+.box1 p{
+    font-size: 30px;
+    padding: 20px;
+}
+.box1 h3{
+    padding: 20px;
+}
+.box2{
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.box2 > .smallbox{
+    min-height: 0;
+}
+.smallbox{
+    height: 100%;
+border: 2px solid black;
+overflow: hidden;
+position: relative;
+}
+.smallbox p{
+    position: absolute;
+    font: 20px;
+}
+.smallbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* z-index: 0.5; */
+}
+.card{
+    height: 40vh;
+    width: 20%;
+    /* border: 2px solid red; */
+    background-color: rgb(230, 223, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.lower{
+    width: 80%;
+}
+.image{
+    height:40%;
+    width: 100%;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.card button{
+    background-color: red;
+    color: white;
+    height: 20%;
+    border-radius: 8px;
+    margin: 10px;
+    width: 60%;
+
+}
+.passage{
+    height:40% ;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    padding: 8px;
+}
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    height: 10vh;
+    background-color: pink;
+    width: 80%;
+    text-align: center;
+}
+@media (max-width:800px){
+
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+.parent,
+.practical,
+.container,
+.lower,
+.footer{
+    width:90%;
+    margin:auto;
+}
+
+nav{
+    height:auto;
+}
+
+nav ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul li{
+    padding:15px 18px;
+}
+
+.practical{
+    margin-top:10px;
+}
+
+.practical h2{
+    font-size:55px;
+    top:15px;
+    left:15px;
+}
+
+.teammembers{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    justify-items:center;
+    gap:20px;
+}
+
+.member{
+    width:180px;
+    height:180px;
+    margin:0;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+}
+
+.box{
+    width:100%;
+    margin:10px 0;
+    height:auto;
+}
+
+.box1{
+    min-height:320px;
+}
+
+.box1 h3{
+    padding:15px;
+}
+
+.box1 p{
+    font-size:22px;
+    padding:15px;
+}
+
+.box2{
+    height:auto;
+    gap:8px;
+}
+
+.smallbox{
+    height:140px;
+}
+
+.lower{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
+
+.card{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+.image{
+    height:180px;
+}
+
+.card button{
+    height:45px;
+    width:70%;
+}
+
+.footer{
+    height:auto;
+    padding:20px 10px;
+}
+
+}
+
+@media (max-width:625px){
+
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+.parent,
+.practical,
+.container,
+.lower,
+.footer{
+    width:95%;
+    margin:auto;
+}
+
+nav{
+    height:auto;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+nav ul li{
+    width:100%;
+    padding:12px;
+}
+
+/* BANNER */
+.practical{
+    margin-top:10px;
+}
+
+.practical h2{
+    font-size:32px;
+    top:10px;
+    left:10px;
+}
+.teammembers{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.member{
+    width:210px;
+    height:210px;
+    margin:10px 0;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+}
+
+.box{
+    width:100%;
+    margin:10px 0;
+    height:auto;
+}
+
+.box1{
+    min-height:300px;
+}
+
+.box1 h3{
+    font-size:24px;
+}
+
+.box1 p{
+    font-size:16px;
+    line-height:1.5;
+}
+
+.box2{
+    height:auto;
+    gap:8px;
+}
+
+.smallbox{
+    height:120px;
+}
+
+.lower{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.card{
+    width:100%;
+    height:auto;
+    margin:10px 0;
+}
+
+.image{
+    height:220px;
+}
+
+.passage h2{
+    font-size:18px;
+}
+
+.passage p{
+    font-size:14px;
+}
+
+.card button{
+    height:42px;
+    width:75%;
+}
+
+.footer{
+    height:auto;
+    padding:15px 10px;
+    font-size:14px;
+}
+
 }
